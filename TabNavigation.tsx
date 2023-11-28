@@ -24,8 +24,8 @@ const TabNavigation: React.FC = () => (
 
           if (route.name === "Home") {
             iconName = focused ? "home" : "home-outline";
-          } else if (route.name === "Info") {
-            iconName = focused ? "bluetooth" : "bluetooth-outline";
+          } else if (route.name === "График") {
+            iconName = focused ? "trending-up" : "trending-up-outline";
           } else if (route.name === "Main") {
             iconName = focused ? "finger-print" : "finger-print-outline";
           }
@@ -40,7 +40,7 @@ const TabNavigation: React.FC = () => (
       }}
     >
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Info" component={Info} />
+      <Tab.Screen name="График" component={Info} />
       <Tab.Screen name="Main" component={Main} />
     </Tab.Navigator>
   </NavigationContainer>
